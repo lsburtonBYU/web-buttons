@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="web button samples from Winter 2022">
+  <title>Sample web buttons</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <main>
+    <div class="ms">
+      <h2>Microsoft</h2>
+      <div>
+        <a class="button"><span>For up to 6 people</span></a>
+      </div>
+      <p>Uses relative positioning to move the text. The arrow is in an <code>::after</code></p>
+    </div>
+    <div class="etsy">
+      <h2>Etsy</h2>
+      <div>
+        <a class="button">
+          <img src="//unsplash.it/id/491/200" alt="tools">
+          <span>on sale</span>
+        </a>
+      </div>
+      <p>Uses <code>border-radius</code> to create a circular image. Hover scales image and adds a box shadow; lightens
+        and underlines text.</p>
+    </div>
+    <div class="instagram">
+      <h2>Instagram</h2>
+      <div>
+        <a class="button">
+          <img class="bg" src="https://static.xx.fbcdn.net/rsrc.php/yT/r/vSKk5zscGX8.svg" alt="">
+          <img class="outline" src="https://static.xx.fbcdn.net/rsrc.php/yZ/r/Sls_tmeuSGE.svg" alt="">
+          <span>Features</span>
+        </a>
+        <a class="button two"><span>No images</span></a>
+      </div>
+      <p>Uses two images inside &lt;a&gt; placed with <code>position: absolute</code> on top of the button. Hover
+        changes
+        the opacity of each image.</p>
+    </div>
+    <div class="twitch">
+      <h2>Twitch</h2>
+      <nav>
+        <div class="wrapper selected">
+          <a class="button">
+            <span>Games</span>
+            <img alt="Games Icon" src="https://static.twitchcdn.net/assets/gaming-e9019587744b56b11b43.svg">
+          </a>
+        </div>
+
+        <div class="wrapper">
+          <a>
+            <span>Music</span>
+            <img alt="Music Icon" src="https://static.twitchcdn.net/assets/music-5fb4595a30d04d991e24.svg">
+          </a>
+        </div>
+      </nav>
+      <p>Buttons with SVGs and a subtle color change on hover. On click, JS changes selected class to add outline.
+        Buttons
+        will line up horizontally when screen displays one column.</p>
+    </div>
+    <div class="birkenstock">
+      <h2>Birkenstock</h2>
+      <div><a class="button">Shop Big Buckle</a></div>
+      <p>Transparent button with border. Hover, active, and focus change background color.</p>
+    </div>
+    <div class="wells-fargo">
+      <h2>Wells Fargo</h2>
+      <div><a class="button">Sign On</a></div>
+      <p>Text underline on hover and focus</p>
+    </div>
+    <div class="pinterest">
+      <h2>Pinterest</h2>
+      <div><a class="button selected">Home</a><a class="button">Today</a></div>
+      <p>Hover and active states on non-selected button (with some JavaScript to toggle selected class)</p>
+    </div>
+    <div class="blunovus">
+      <h2>Blunovus</h2>
+      <div><a>Watch Video</a></div>
+      <p>Hover is a .3 second color transition. Arrow icon added using <code>::after</code></p>
+    </div>
+    <div class="old-spice">
+      <h2>Old Spice</h2>
+      <div><a>Shop Everything</a></div>
+      <p>Hover transitions transparent background to .7 opacity white. Focus has a blue outline (outline moved to
+        :active).</p>
+    </div>
+    <div class="byutv">
+      <h2>BYU TV</h2>
+      <div><a class="button">
+          <img src="https://www.byutv.org/images/svg/byutv-logo.svg" alt="byu tv logo">
+        </a></div>
+      <p>A simple transform: scale() on hover.</p>
+    </div>
+    <div class="cyberpunk">
+      <h2>Cyberpunk</h2>
+      <div><a class="button">Available Now</a></div>
+      <p>Uses a variation of an old "glitch" technique. The hover effect is created by overlaying a <code>::after</code>
+        pseudo-element and animating it by slicing it with clip path and moving the slices. <a
+          href="https://codepen.io/lsburton/pen/XWzjBJY?editors=1100" target="_blank">View this version in its own
+          pen.</a></p>
+    </div>
+    <div class="roolee">
+      <h2>Roolee</h2>
+      <div><a class="button">Tops</a></div>
+      <p>Simple button with transparent background with no hover effects.</p>
+    </div>
+    <div class="ptable">
+      <h2>Ptable</h2>
+      <div><a class="button"><span>Pt</span>able</a></div>
+      <ul>
+        <li class="metalloid">
+          <div class="num">5</div>
+          <div class="symbol">B</div>
+          <div class="element">Boron</div>
+          <div class="mass">10.81</div>
+        </li>
+        <li class="nonmetal p Solid Dim">
+          <div class="num">6</div>
+          <div class="symbol">C</div>
+          <div class="element">Carbon</div>
+          <div class="mass">12.011</div>
+        </li>
+        <li class="nonmetal">
+          <div class="num">7</div>
+          <div class="symbol">N</div>
+          <div class="element">Nitrogen</div>
+          <div class="mass">14.007</div>
+        </li>
+        <li class="nonmetal gas">
+          <div class="num">8</div>
+          <div class="symbol">O</div>
+          <div class="element">Oxygen</div>
+          <div class="mass">15.999</div>
+        </li>
+        <li class="nonmetal gas">
+          <div class="num">9</div>
+          <div class="symbol">F</div>
+          <div class="element">Fluorine</div>
+          <div class="mass">18.998</div>
+        </li>
+        <li class="poor">
+          <div class="num">13</div>
+          <div class="symbol">Al</div>
+          <div class="element">Aluminum</div>
+          <div class="mass">26.982</div>
+        </li>
+        <li class="metalloid">
+          <div class="num">14</div>
+          <div class="symbol">Si</div>
+          <div class="element">Silicon</div>
+          <div class="mass">28.085</div>
+        </li>
+        <li class="nonmetal">
+          <div class="num">15</div>
+          <div class="symbol">P</div>
+          <div class="element">Phosphorus</div>
+          <div class="mass">30.974</div>
+        </li>
+        <li class="nonmetal">
+          <div class="num">16</div>
+          <div class="symbol">S</div>
+          <div class="element">Sulfur</div>
+          <div class="mass">32.06</div>
+        </li>
+        <li class="nonmetal gas" data-atomic="17" tabindex="0">
+          <div class="num">17</div>
+          <div class="symbol">Cl</div>
+          <div class="element">Chlorine</div>
+          <div class="mass">35.45</div>
+        </li>
+        <li class="poor">
+          <div class="num">31</div>
+          <div class="symbol">Ga</div>
+          <div class="element">Gallium</div>
+          <div class="mass">69.723</div>
+        </li>
+        <li class="metalloid">
+          <div class="num">32</div>
+          <div class="symbol">Ge</div>
+          <div class="element">Germanium</div>
+          <div class="mass">72.630</div>
+        </li>
+        <li class="metalloid">
+          <div class="num">33</div>
+          <div class="symbol">As</div>
+          <div class="element">Arsenic</div>
+          <div class="mass">74.922</div>
+        </li>
+        <li class="nonmetal">
+          <div class="num">34</div>
+          <div class="symbol">Se</div>
+          <div class="element">Selenium</div>
+          <div class="mass">78.971</div>
+        </li>
+        <li class="nonmetal liquid">
+          <div class="num">35</div>
+          <div class="symbol">Br</div>
+          <div class="element">Bromine</div>
+          <div class="mass">79.904</div>
+        </li>
+      </ul>
+      <p> Outline on hover over elements. Clicking on button triggers a CSS animation to make the grid shimmer. Shimmer
+        is
+        an ::after pseudo element with an animated gradient background.<a
+          href="https://codepen.io/lsburton/pen/ExbgOJq/6593b16723dc7f71b9c0a880ebac2395?editors=0100"
+          target="_blank">Sample Codepen.</a></p>
+    </div>
+  </main>
+  <script>
+    document.querySelectorAll(".twitch .wrapper").forEach((button, index, list) =>
+      button.addEventListener("click", function () {
+        if (!this.classList.contains("selected")) {
+          list.forEach((e) => e.classList.toggle("selected"));
+        }
+      })
+    );
+
+    document.querySelectorAll(".pinterest .button").forEach((button, index, list) =>
+      button.addEventListener("click", function () {
+        if (!this.classList.contains("selected")) {
+          list.forEach((e) => e.classList.toggle("selected"));
+        }
+      })
+    );
+
+    const target = document.querySelector(".ptable ul");
+    document.querySelector(".ptable .button").addEventListener("click", () => {
+      target.classList.add("shimmer");
+    });
+
+    target.onanimationend = function () {
+      this.classList.remove("shimmer");
+    };
+  </script>
+</body>
+
+</html>
