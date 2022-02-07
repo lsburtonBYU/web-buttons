@@ -11,16 +11,48 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;700&family=Roboto+Mono&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
   <main>
+    <div class="youtube">
+      <h2>YouTube</h2>
+      <div>
+        <a class="button">
+          <svg class="og" viewbox="0 0 24 24" preserveaspectratio="xMidYMid meet" focusable="false"
+            style="pointer-events: none; width: 100%; height: 100%;">
+            <g>
+              <path
+                d="M9.8,9.8l-3.83,8.23l8.23-3.83l3.83-8.23L9.8,9.8z M13.08,12.77c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02c-0.28,0-0.54-0.08-0.77-0.25c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99 c0.21-0.29,0.51-0.48,0.86-0.54c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86C13.37,12.13,13.29,12.48,13.08,12.77z M12,3c4.96,0,9,4.04,9,9s-4.04,9-9,9s-9-4.04-9-9S7.04,3,12,3 M12,2C6.48,2,2,6.48,2,12s4.48,10,10,10s10-4.48,10-10S17.52,2,12,2 L12,2z">
+              </path>
+            </g>
+          </svg>
+          <svg class="selected" viewbox="0 0 24 24" preserveaspectratio="xMidYMid meet" focusable="false"
+            style="pointer-events: none; width: 100%; height: 100%;">
+            <g class="style-scope yt-icon">
+              <path
+                d="M11.23,13.08c-0.29-0.21-0.48-0.51-0.54-0.86c-0.06-0.35,0.02-0.71,0.23-0.99c0.21-0.29,0.51-0.48,0.86-0.54 c0.35-0.06,0.7,0.02,0.99,0.23c0.29,0.21,0.48,0.51,0.54,0.86c0.06,0.35-0.02,0.71-0.23,0.99c-0.21,0.29-0.51,0.48-0.86,0.54 c-0.07,0.01-0.15,0.02-0.22,0.02C11.72,13.33,11.45,13.25,11.23,13.08z M22,12c0,5.52-4.48,10-10,10S2,17.52,2,12 C2,6.48,6.48,2,12,2S22,6.48,22,12z M18.03,5.97L9.8,9.8l-3.83,8.23l8.23-3.83L18.03,5.97z">
+              </path>
+            </g>
+          </svg>
+          <span>Explore</span>
+        </a>
+      </div>
+      <p>Inline SVGs. I added an active state to show the SVG when its page is selected.</p>
+    </div>
+    <div class="draw">
+      <h2>Google Draw</h2>
+      <div class="button"><span>Let's Draw!</span></div>
+      <p>A skeuomorphic button modeled after old-school web buttons. Uses an SVG sprite as a background image.
+        <img src="images/OG-sprite.svg#buttons_large-usage" alt="example sprite image"></p>
+    </div>
     <div class="polygon">
       <h2>Polygon</h2>
-      <div class="menu-item">BIKE
+      <div class="menu-item"><span>BIKE</span>
         <ul class="main-submenu">
           <li>
             <a title="ROAD"><span>ROAD</span></a>
@@ -72,7 +104,11 @@
           </li>
         </ul>
       </div>
-      <p>The site uses JavaScript to show the menu. Since it appears on hover, you can convert it to CSS</p>
+      <p>The site uses JavaScript to show the menu. Since it appears on hover, you can convert it to CSS. I did this
+        quickly, but hover over BIKE for the mega-dropdown to appear. The submenu items change
+        color on hover and use an <code>::after</code> pseudo-element and scale to animate the
+        underline.
+      </p>
     </div>
     <div class="woven">
       <h2>Woven Magazine</h2>

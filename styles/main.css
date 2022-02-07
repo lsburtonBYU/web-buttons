@@ -27,10 +27,86 @@ a {
   user-select: none;
 }
 /* individual button styles start here */
+.youtube > div {
+  width: calc(40px + 2rem);
+  align-self: center;
+  padding: 1rem;
+}
+
+.youtube .button {
+  font-size: 10px;
+  line-height: 2;
+}
+
+.youtube .selected {
+  display: none;
+  /* not the best way to do this, but I was tired as it was my last button :'( */
+}
+.youtube .og {
+  display: block;
+}
+
+.youtube > div:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.youtube > div:active {
+  background-color: #fff;
+}
+
+.youtube > div:active .selected {
+  display: block;
+}
+
+.youtube > div:active .og {
+  display: none;
+}
+
+.draw {
+  display: block;
+}
+
+.draw .button {
+  display: inline-block;
+  height: 58px;
+  width: 200px;
+  padding: 0 8px 18px 9px;
+  background-size: 400px 142px;
+  background-position: 0 -71px;
+  user-select: none;
+  cursor: pointer;
+  background-image: url(../images/OG-sprite.svg#buttons_large-usage);
+}
+
+.draw .button span {
+  display: block;
+  color: white;
+  text-align: center;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  cursor: pointer;
+  line-height: 2.2;
+}
+
+.draw .button:active {
+  background-position: -200px -71px;
+  padding-left: 3px;
+}
+
+.draw .button:active span {
+  position: relative;
+  top: 8px;
+}
+
 .polygon .menu-item {
   color: #727272;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  flex: 0 0 auto;
+  height: 2rem;
 }
 
 .polygon ul {
@@ -45,7 +121,17 @@ a {
   position: absolute;
   padding: 1rem 2rem;
   margin-top: 1rem;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 300ms, transform 300ms;
 }
+
+.polygon .menu-item:hover .main-submenu {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* top menu */
 .polygon .main-submenu > li > a {
   padding: 0.875em 0;
@@ -60,6 +146,28 @@ a {
 .polygon .menu-item > ul {
   display: flex;
   gap: 1rem;
+}
+
+.polygon .menu-item > ul ul li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  margin-top: 3px;
+  background-color: #e51937;
+  transform: scale(0);
+  transform-origin: left;
+  transition: transform 0.3s cubic-bezier(0.68, 0, 0.265, 1);
+}
+
+.polygon .menu-item > ul ul li:hover {
+  color: #e51937;
+  transform-origin: right;
+  transition: transform 0.3s cubic-bezier(0.68, 0, 0.265, 1);
+}
+
+.polygon .menu-item > ul ul li:hover::after {
+  transform: scale(1);
 }
 
 .woven {
